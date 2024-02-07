@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 const clothes = [
   {
     id:nanoid(),
+    isDisplay:true,
     clotheName: "El Clasico Denim Pant",
     price: 175,
     img: "./img/pants.webp",
@@ -35,6 +36,9 @@ const clothes = [
     ],
   },
   {
+    id:nanoid(),
+    isDisplay:false,
+
     clotheName: "ASHLUXE Logo Blank High neck T-shirt White",
     price: 98,
     img: "./img/neck.webp",
@@ -60,10 +64,13 @@ const clothes = [
     ],
   },
   {
+    id:nanoid(),
+    isDisplay:false,
+
     clotheName: "Men's Denim Trucker Jean - Black",
     price: 520,
-    img: "./img/",
-    alt: "https://cdn.shopify.com/s/files/1/0066/2326/4828/products/Ashluxe_Men_s_Denim_Trucker_Jean-Black_19605e50-87f8-4d9b-bd8c-e13c5b235502_720x.png?v=1698408072",
+    img: "https://cdn.shopify.com/s/files/1/0066/2326/4828/products/Ashluxe_Men_s_Denim_Trucker_Jean-Black_19605e50-87f8-4d9b-bd8c-e13c5b235502_720x.png?v=1698408072",
+    alt: "Some Men Jeans",
     color: "Black",
     size: [
       {
@@ -85,6 +92,9 @@ const clothes = [
     ],
   },
   {
+    id:nanoid(),
+    isDisplay:false,
+
     clotheName: "Ashluxe Denim Shorts Washed Blue",
     price: 340,
     img: "./img/shorts.webp",
@@ -110,12 +120,15 @@ const clothes = [
     ],
   },
   {
+    id:nanoid(),
+    isDisplay:false,
+
     clotheName: "Ashluxe Mirro Glasses - Red",
     price: 120,
     img: "./img/glass.webp",
     alt: "https://cdn.shopify.com/s/files/1/0066/2326/4828/products/11_d307e1a7-212f-43a1-9342-d2624d5f2a0d_720x.png?v=1698408068",
     color: "red",
-    size: "OS"
+    size: [{sizeNum:"OS",isAvailble:true}]
   }
 ];
 
