@@ -2,4 +2,81 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.App nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5em 0;
+  background: #fff;
+}
+.App nav img {
+  width: 50%;
+}
+.App nav .icon-size {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.App .text-under-nav {
+  font-size: 1em;
+  margin: 1.5em 0;
+  text-align: center;
+  color: #28282b;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.App .displayItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App .displayItem img {
+  width: 80%;
+  margin: 1.5em auto;
+}
+.App .displayItem .displayText {
+  padding: 1em 1.5em;
+  font-family: sans-serif;
+}
+.App .displayItem .displayText h1 {
+  margin: 0 0 0.5em;
+}
+.App .displayItem .displayText p#one {
+  margin-bottom: 1em;
+}
+.App .displayItem .displayText p#two {
+  font-size: 1.2em;
+  font-weight: lighter;
+  margin-bottom: 1.5em;
+}
+.App .displayItem .displayText p {
+  margin: 0.5em 0;
+}
+.App .displayItem .displayText .sizes {
+  display: flex;
+}
+.App .displayItem .displayText .sizes .size {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration-color: red;
+  -moz-text-decoration-color: red;
+}
+.App .displayItem .displayText .color span {
+  width: 45px;
+  height: 45px;
+  background-color: blue;
+  border: 2px solid #28282b;
+  display: inline-block;
+}
+
+.activeColor {
+  background: #28282b;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
