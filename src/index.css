@@ -117,8 +117,25 @@ html {
   background: #28282b;
   color: #fff;
 }
-
-.help {
+.App .hamburger {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+.App .hamburger .left {
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+}
+.App .hamburger .right {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(40, 40, 43, 0.862745098);
+}
+.App .help {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -133,46 +150,45 @@ html {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
-.help h4 {
+.App .help h4 {
   font-size: 0.9em;
   color: rgba(207, 238, 160, 0.493);
 }
-.help .icon-style {
+.App .help .icon-style {
   font-size: 3em;
   margin-right: 0.3em;
 }
-
-.clotheList {
+.App .clotheList {
   overflow-x: hidden;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: lighter;
 }
-.clotheList h3 {
+.App .clotheList h3 {
   text-align: center;
 }
-.clotheList .clothes {
+.App .clotheList .clothes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.clotheList .clothes .clothe {
+.App .clotheList .clothes .clothe {
   width: 180px;
   margin: 15px;
   text-align: center;
   cursor: pointer;
 }
-.clotheList .clothes .clothe img {
+.App .clotheList .clothes .clothe img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.clotheList .clothes .clothe h2 {
+.App .clotheList .clothes .clothe h2 {
   font-size: 0.7em;
   margin: 0.5em 0;
 }
-.clotheList .clothes .clothe .color {
+.App .clotheList .clothes .clothe .color {
   width: 20px;
   height: 20px;
   border: 1px solid rgba(40, 40, 43, 0.368627451);
@@ -183,44 +199,59 @@ html {
   -o-border-radius: 50px;
   margin: 0.5em auto;
 }
-.clotheList .clothes .clothe .sizes {
+.App .clotheList .clothes .clothe .sizes {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1em auto;
 }
-.clotheList .clothes .clothe .sizes P {
+.App .clotheList .clothes .clothe .sizes P {
   margin: 0 0.3em;
 }
-
-.activeColor {
+.App .cart-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+}
+.App .cart-container .cart-nav-bar {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5em 0;
+  align-items: center;
+}
+.App .cart-container .cart-list {
+  width: 100%;
+}
+.App .cart-container .cart-list .cart-item .cart-top {
+  display: flex;
+}
+.App .cart-container .cart-list .cart-item .cart-top img {
+  width: 30%;
+}
+.App .cart-container .cart-list .cart-item .cart-top .top {
+  width: 70%;
+  padding: 1.5em;
+}
+.App .cart-container .cart-list .cart-item .cart-top .top .name {
+  display: flex;
+  justify-content: space-between;
+}
+.App .cart-container .cart-list .cart-item .cart-top .top .name .text h4 {
+  margin-bottom: 1em;
+}
+.App .cart-container .cart-list .cart-item .cart-top .top .cart-bottom-text {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.App .cart-container .cart-list .cart-item .cart-top .top .cart-bottom-text .quantity p span {
+  margin: 0 0.5em;
+}
+.App .activeColor {
   background: #28282b;
   color: #fff;
-}
-
-.hamburger {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  top: 0;
-  left: 0;
-}
-.hamburger .left {
-  width: 80%;
-  height: 100%;
-  background-color: #fff;
-}
-.hamburger .right {
-  width: 20%;
-  height: 100%;
-  background-color: rgba(40, 40, 43, 0.862745098);
-}
-
-.hamburgerTransition {
-  transition: all 2s;
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  -ms-transition: all 2s;
-  -o-transition: all 2s;
 }/*# sourceMappingURL=index.css.map */
