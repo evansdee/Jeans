@@ -76,7 +76,7 @@ export default function App() {
       <Help />
       <ClotheList onSelectClothe={onSelectClothe} clothesArr={clothesArr} />
       <HamBurgerMenu closeHamburgerMenu={closeHamburgerMenu} toggleHamMenu={toggleHamMenu} />
-      <Cart man={man} prevCount={prevCount} nextCount={nextCount} toggleCart={toggleCart} closeCartMenu={closeCartMenu} cartArr={cartArr}/>
+      <Cart count={count} man={man} prevCount={prevCount} nextCount={nextCount} toggleCart={toggleCart} closeCartMenu={closeCartMenu} cartArr={cartArr}/>
     </div>
   );
 }

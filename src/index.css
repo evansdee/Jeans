@@ -20,8 +20,18 @@ html {
   padding: 1.5em 0;
   background: #fff;
 }
+.App nav ul {
+  display: none;
+}
 .App nav img {
   width: 50%;
+}
+.App nav main {
+  display: flex;
+  align-items: center;
+}
+.App nav main p {
+  margin-left: 0.3em;
 }
 .App nav .icon-size {
   font-size: 1.5em;
@@ -174,7 +184,7 @@ html {
   width: 100%;
 }
 .App .clotheList .clothes .clothe {
-  width: 180px;
+  width: 160px;
   margin: 15px;
   text-align: center;
   cursor: pointer;
@@ -210,10 +220,14 @@ html {
 }
 .App .cart-container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100%;
   background-color: #fff;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
 }
 .App .cart-container .cart-nav-bar {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -221,9 +235,16 @@ html {
   justify-content: space-around;
   padding: 1.5em 0;
   align-items: center;
+  border-bottom: 2px solid rgba(40, 40, 43, 0.1529411765);
 }
 .App .cart-container .cart-list {
   width: 100%;
+}
+.App .cart-container .cart-list .cart-item {
+  border-bottom: 0.5px solid rgba(40, 40, 43, 0.1529411765);
+  font-weight: 700;
+  margin: 1em 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .App .cart-container .cart-list .cart-item .cart-top {
   display: flex;
@@ -251,7 +272,62 @@ html {
 .App .cart-container .cart-list .cart-item .cart-top .top .cart-bottom-text .quantity p span {
   margin: 0 0.5em;
 }
+.App .cart-container .cart-list .cart-item .cart-mid {
+  border-top: 0.5px solid rgba(40, 40, 43, 0.1529411765);
+  border-bottom: 0.5px solid rgba(40, 40, 43, 0.1529411765);
+  padding: 1.5em;
+  width: 100%;
+}
+.App .cart-container .cart-list .cart-item .cart-mid p:nth-of-type(1) {
+  background-color: #ddd;
+  padding: 1em 0.5em;
+}
+.App .cart-container .cart-list .cart-item .cart-mid #one, .App .cart-container .cart-list .cart-item .cart-mid #two {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+.App .cart-container .cart-list .cart-item .cart-bottom {
+  padding: 1.5em;
+}
+.App .cart-container .cart-list .cart-item .cart-bottom p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.App .cart-container .cart-list .cart-item .cart-bottom button:nth-of-type(1) {
+  float: right;
+  border: none;
+  padding: 1.2em 1.7em;
+  background-color: #ddd;
+}
+.App .cart-container .cart-list .cart-item .cart-bottom button:nth-of-type(2) {
+  color: #fff;
+  border: none;
+  padding: 1.2em 1.7em;
+  background-color: #28282b;
+}
 .App .activeColor {
   background: #28282b;
   color: #fff;
+}
+
+@media (min-width: 900px) {
+  .App nav {
+    padding: 2em 0;
+  }
+  .App nav img {
+    width: 25%;
+  }
+  .App .text-under-nav {
+    font-size: 1.3em;
+  }
+  .App .displayItem {
+    margin-top: 2em;
+    flex-direction: row;
+  }
+  .App .displayItem img {
+    width: 30%;
+    margin: 0;
+  }
 }/*# sourceMappingURL=index.css.map */

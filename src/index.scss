@@ -21,8 +21,19 @@ html {
     align-items: center;
     padding: 1.5em 0;
     background: #fff;
+
+    ul{
+        display: none;
+    }
     img {
       width: 50%;
+    }
+    main{
+        display: flex;
+        align-items: center;
+        p{
+            margin-left: .3em;
+        }
     }
     .icon-size {
       font-size: 1.5em;
@@ -199,7 +210,7 @@ html {
       width: 100%;
 
       .clothe {
-        width: 180px;
+        width: 160px;
         margin: 15px;
         text-align: center;
         cursor: pointer;
@@ -239,10 +250,14 @@ html {
 
   .cart-container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100%;
     background-color: #fff;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
 
     .cart-nav-bar {
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -251,12 +266,18 @@ html {
       justify-content: space-around;
       padding: 1.5em 0;
       align-items: center;
+      border-bottom: 2px solid #28282b27;
     }
 
     .cart-list {
       width: 100%;
 
       .cart-item {
+        // border-top: .5px solid #28282b27;
+        border-bottom: .5px solid #28282b27;
+        font-weight: 700;
+        margin: 1em 0;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         .cart-top {
           display: flex;
           img {
@@ -292,6 +313,44 @@ html {
             }
           }
         }
+        .cart-mid{
+            border-top: .5px solid #28282b27;
+            border-bottom: .5px solid #28282b27;
+            padding: 1.5em;
+            width: 100%;
+
+            p:nth-of-type(1){
+                background-color: #ddd;
+                padding: 1em .5em;
+            }
+            #one,#two{
+                display: flex;
+                justify-content: space-between;
+                margin: 1em 0;
+            }
+        }
+        .cart-bottom{
+            padding: 1.5em;
+            p{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1em;
+            }
+            button:nth-of-type(1){
+                float: right;
+                border: none;
+                padding: 1.2em 1.7em;
+                background-color: #ddd;
+
+            }
+            button:nth-of-type(2){
+                color: #fff;
+                border: none;
+                padding: 1.2em 1.7em;
+                background-color: #28282b;
+
+            }
+        }
       }
     }
   }
@@ -300,4 +359,29 @@ html {
     background: #28282b;
     color: #fff;
   }
+}
+
+
+@media (min-width:900px){
+    .App{
+        nav{
+            padding: 2em 0;
+            img{
+                width: 25%;
+            }
+        }
+        .text-under-nav{
+            font-size: 1.3em;
+        }
+
+        .displayItem{
+        margin-top: 2em;
+            flex-direction: row;
+
+            img{
+                width: 30%;
+                margin: 0;
+            }
+        }
+    }
 }

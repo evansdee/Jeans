@@ -32,6 +32,7 @@ export default function Cart({
           nextCount={nextCount}
           cartArr={cartArr}
           man={man}
+          count={count}
         />
       ) : (
         <p style={{ textAlign: "center", marginTop: "3em" }}>

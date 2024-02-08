@@ -68,6 +68,7 @@ export default function DisplayItem({
           <Button>Buy it now</Button>
         </div>
       </div>
+      
     </div>
   );
 }

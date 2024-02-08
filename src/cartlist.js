@@ -1,6 +1,6 @@
 import CartItem from "./cartitem";
 
-export default function CartList({ man,cartArr, nextCount,prevCount }) {
+export default function CartList({count, man,cartArr, nextCount,prevCount }) {
   return (
     <div className="cart-list">
       {cartArr.map((ele) => {
@@ -11,6 +11,7 @@ export default function CartList({ man,cartArr, nextCount,prevCount }) {
             prevCount={prevCount}
             nextCount={nextCount}
             man={man}
+            count={count}
           />
         );
       })}
