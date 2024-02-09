@@ -3,6 +3,8 @@ import clothes from "./data";
 import Cart from "./cart";
 import NavBar from "./navbar";
 import ClotheList from "./clothelist";
+import PopUp from "./pop";
+import Button from "./button";
 import Footer from './footer'
 import UnderFooter from "./under";
 import DisplayItem from "./displayitem";
@@ -14,10 +16,13 @@ export default function App() {
   const [selectedSize, setSelectedSizd] = React.useState(
     selectedItem.size[0].sizeNum
   );
+  const [pop,setPop] = React.useState(true)
   const [cartArr,setCartArr] = React.useState([])
   const [toggleHamMenu,setToggleHamMenu] = React.useState(false)
   const [toggleCart,setToggleCart] = React.useState(false)
   // const [openHamby]
+
+ 
 
   function man(id){
     setCartArr(prev => prev.filter(ele=>{
@@ -77,6 +82,9 @@ export default function App() {
       <Cart  man={man}  toggleCart={toggleCart} closeCartMenu={closeCartMenu} cartArr={cartArr}/>
       <Footer/>
       <UnderFooter/>
+      {pop ? <PopUp onClick={()=>setPop(false)}/> : <Button popBtn={'pop-button'} onClick={()=>setPop(true)}>
+        Sign Up For Newsletters</Button>}
+
     </div>
   );
 }

@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
       p {
         margin-left: 0.3em;
       }
-      #icon{
+      #icon {
         display: none;
       }
     }
@@ -240,7 +240,7 @@ body::-webkit-scrollbar-thumb {
       width: 100%;
 
       .clothe {
-        width: 160px;
+        width: 150px;
         margin: 15px;
         text-align: center;
         cursor: pointer;
@@ -456,6 +456,108 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+.pop-button{
+  border: none;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  background-color: #28282b;
+  padding: .3em;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.pop-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #28282b98;
+
+  .pop {
+    width: 90%;
+    height: 35%;
+    display: flex;
+    position: relative;
+
+    form {
+      background-color: #fff;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      height: 100%;
+      padding: 1em 1.5em;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+      h3{
+        width: 70%;
+        text-transform: capitalize;
+        margin-bottom: .5em;
+      }
+
+      button{
+        width: 100%;
+        padding: .5em;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        border: none;
+        background: #28282b;
+        margin-top: .5em;
+        color: #fff;
+        text-transform: uppercase;
+        -o-border-radius: 50px;
+        letter-spacing: 3px;
+}
+
+      input{
+        padding: 1em 0;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #28282b27;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      object-fit: cover;
+    }
+
+    form,
+    .img {
+      width: 50%;
+      height: 100%;
+
+      input {
+        width: 100%;
+      }
+      button {
+        margin: 0.5em auto;
+      }
+    }
+    .close {
+      // display: none;
+      position: absolute;
+      top: 1em;
+      right: 1em;
+      color: #fff;
+    }
+  }
+}
+
 @media (min-width: 900px) {
   .App {
     nav {
@@ -535,12 +637,11 @@ body::-webkit-scrollbar-thumb {
       img {
         width: 15%;
       }
-      main{
-        #icon{
-            display: block;
-            margin: 0 .5em;
+      main {
+        #icon {
+          display: block;
+          margin: 0 0.5em;
         }
-     
       }
 
       ul {
@@ -552,43 +653,43 @@ body::-webkit-scrollbar-thumb {
       }
     }
 
-    .clotheList{
-        h3{
-            font-size: 1.5em;
-        }
-        .clothes{
-            margin-top: 3em;
-            .clothe{
-                width: 300px;
-                object-fit: cover;
+    .clotheList {
+      h3 {
+        font-size: 1.5em;
+      }
+      .clothes {
+        margin-top: 3em;
+        .clothe {
+          width: 300px;
+          object-fit: cover;
 
-                h2{
+          h2 {
+            font-size: 1.2em;
+          }
 
-                    font-size: 1.2em;
-                }
-
-                .sizes{
-                    p{
-                        font-size: 1.2em;
-                    }
-                }
+          .sizes {
+            p {
+              font-size: 1.2em;
             }
+          }
         }
+      }
     }
-    .cart-container{
-        width: 30vw;
-        overflow-x: hidden;
-        // right: 0;
-        // left: 100%;
+    .cart-container {
+      width: 30vw;
+      overflow-x: hidden;
+      // right: 0;
+      // left: 100%;
     }
 
-    footer{
-        justify-content: center;
-        align-content: center;
-        .text,.form{
-            width: 40%;
-            padding: 1.5em;
-        }
+    footer {
+      justify-content: center;
+      align-content: center;
+      .text,
+      .form {
+        width: 40%;
+        padding: 1.5em;
+      }
     }
   }
 }

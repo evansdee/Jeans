@@ -206,7 +206,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
 }
 .App .clotheList .clothes .clothe {
-  width: 160px;
+  width: 150px;
   margin: 15px;
   text-align: center;
   cursor: pointer;
@@ -391,6 +391,102 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
+.pop-button {
+  border: none;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  background-color: #28282b;
+  padding: 0.3em;
+  color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.pop-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(40, 40, 43, 0.5960784314);
+}
+.pop-container .pop {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  position: relative;
+}
+.pop-container .pop form {
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  height: 100%;
+  padding: 1em 1.5em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.pop-container .pop form h3 {
+  width: 70%;
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+}
+.pop-container .pop form button {
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  border: none;
+  background: #28282b;
+  margin-top: 0.5em;
+  color: #fff;
+  text-transform: uppercase;
+  -o-border-radius: 50px;
+  letter-spacing: 3px;
+}
+.pop-container .pop form input {
+  padding: 1em 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(40, 40, 43, 0.1529411765);
+}
+.pop-container .pop img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.pop-container .pop form,
+.pop-container .pop .img {
+  width: 50%;
+  height: 100%;
+}
+.pop-container .pop form input,
+.pop-container .pop .img input {
+  width: 100%;
+}
+.pop-container .pop form button,
+.pop-container .pop .img button {
+  margin: 0.5em auto;
+}
+.pop-container .pop .close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: #fff;
+}
+
 @media (min-width: 900px) {
   .App nav {
     padding: 2em 0;
@@ -489,7 +585,8 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-content: center;
   }
-  .App footer .text, .App footer .form {
+  .App footer .text,
+  .App footer .form {
     width: 40%;
     padding: 1.5em;
   }
