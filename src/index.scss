@@ -635,6 +635,15 @@ body::-webkit-scrollbar-thumb {
   .pop-container{
     .pop{
       width: 60%;
+      height: 35%;
+    }
+  }
+}
+@media (min-width:1200px){
+  .pop-container{
+    .pop{
+      width: 50%;
+      height: 35%;
     }
   }
 }
@@ -706,8 +715,8 @@ body::-webkit-scrollbar-thumb {
 
     .pop-container{
       .pop{
-        width: 40%;
-        height: 50%;
+        width: 50%;
+        height: 45%;
 
         form{
           h3{

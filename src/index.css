@@ -545,6 +545,13 @@ body::-webkit-scrollbar-thumb {
   }
   .pop-container .pop {
     width: 60%;
+    height: 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .pop-container .pop {
+    width: 50%;
+    height: 35%;
   }
 }
 @media (min-width: 1365px) {
@@ -599,8 +606,8 @@ body::-webkit-scrollbar-thumb {
     padding: 1.5em;
   }
   .App .pop-container .pop {
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: 45%;
   }
   .App .pop-container .pop form h3 {
     font-size: 2em;
