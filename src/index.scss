@@ -486,7 +486,7 @@ body::-webkit-scrollbar-thumb {
 
   .pop {
     width: 90%;
-    height: 35%;
+    height: 50%;
     display: flex;
     position: relative;
 
@@ -557,7 +557,13 @@ body::-webkit-scrollbar-thumb {
     }
   }
 }
-
+@media (min-width:400px){
+ .pop-container{
+  .pop{
+    height: 40%;
+  }
+ }
+}
 @media (min-width: 900px) {
   .App {
     nav {
@@ -625,6 +631,12 @@ body::-webkit-scrollbar-thumb {
       }
     }
   }
+
+  .pop-container{
+    .pop{
+      width: 60%;
+    }
+  }
 }
 
 @media (min-width: 1365px) {
@@ -689,6 +701,23 @@ body::-webkit-scrollbar-thumb {
       .form {
         width: 40%;
         padding: 1.5em;
+      }
+    }
+
+    .pop-container{
+      .pop{
+        width: 40%;
+        height: 50%;
+
+        form{
+          h3{
+              font-size: 2em;
+          }
+
+          input{
+            margin: .5em 0;
+          }
+        }
       }
     }
   }

@@ -7,11 +7,11 @@ export default function PopUp({onClick}) {
       <div className="pop">
         <form action="">
           <h3>sign up for newsletters, promotions & updates</h3>
-          <input type="email" placeholder="Email" />
+          <input type="email" required placeholder="Email" />
           <br />
-          <input type="name" placeholder="First Name" />
+          <input type="name" required placeholder="First Name" />
           <br />
-          <input type="name" placeholder="Last Name" />
+          <input type="name" required placeholder="Last Name" />
           <br />
           <Button>Continue</Button>
         </form>

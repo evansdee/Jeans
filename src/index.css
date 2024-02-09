@@ -421,7 +421,7 @@ body::-webkit-scrollbar-thumb {
 }
 .pop-container .pop {
   width: 90%;
-  height: 35%;
+  height: 50%;
   display: flex;
   position: relative;
 }
@@ -487,6 +487,11 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
+@media (min-width: 400px) {
+  .pop-container .pop {
+    height: 40%;
+  }
+}
 @media (min-width: 900px) {
   .App nav {
     padding: 2em 0;
@@ -537,6 +542,9 @@ body::-webkit-scrollbar-thumb {
   }
   .App footer .form .input input {
     text-align: left;
+  }
+  .pop-container .pop {
+    width: 60%;
   }
 }
 @media (min-width: 1365px) {
@@ -589,5 +597,15 @@ body::-webkit-scrollbar-thumb {
   .App footer .form {
     width: 40%;
     padding: 1.5em;
+  }
+  .App .pop-container .pop {
+    width: 40%;
+    height: 50%;
+  }
+  .App .pop-container .pop form h3 {
+    font-size: 2em;
+  }
+  .App .pop-container .pop form input {
+    margin: 0.5em 0;
   }
 }/*# sourceMappingURL=index.css.map */
