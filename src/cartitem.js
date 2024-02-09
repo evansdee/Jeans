@@ -1,7 +1,20 @@
 import { FaWindowClose } from "react-icons/fa";
 import Button from "./button";
+import React from "react";
 
-export default function CartItem({count, man, ele, prevCount, nextCount }) {
+export default function CartItem({man, ele,}) {
+
+  const [count,setCount] = React.useState(ele.count)
+
+  function prevCount() {
+    count > 1 && setCount((prev) => prev - 1);
+  }
+  function nextCount() {
+    count < 12 && setCount((prev) => prev + 1);
+  }
+
+
+  console.log(count)
   return (
     <div className="cart-item">
       <div className="cart-top">

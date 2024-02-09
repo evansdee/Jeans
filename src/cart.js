@@ -6,9 +6,6 @@ export default function Cart({
   toggleCart,
   closeCartMenu,
   cartArr,
-  count,
-  prevCount,
-  nextCount,
   man
 }) {
   const closeCartStyle = {
@@ -28,11 +25,9 @@ export default function Cart({
       <CartNavBar cartArr={cartArr} closeCartMenu={closeCartMenu} />
       {cartArr.length ? (
         <CartList
-          prevCount={prevCount}
-          nextCount={nextCount}
+    
           cartArr={cartArr}
           man={man}
-          count={count}
         />
       ) : (
         <p style={{ textAlign: "center", marginTop: "3em" }}>

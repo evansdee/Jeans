@@ -1,16 +1,22 @@
 import React from "react";
 import Button from "./button";
+import Help from "./help";
 
 export default function DisplayItem({
   selectedItem,
   selectedSize,
-  count,
-  prevCount,
-  nextCount, 
   onChangeSize,
   onAddItemCart,
   openCartMenu
 }) {
+
+  const [count, setCount] = React.useState(1);
+  function prevCount() {
+    count > 1 && setCount((prev) => prev - 1);
+  }
+  function nextCount() {
+    count < 12 && setCount((prev) => prev + 1);
+  }
 
   const newObj={
     ...selectedItem,
@@ -66,6 +72,8 @@ export default function DisplayItem({
         <div className="btn">
           <Button onClick={addToCart}>Add to Cart</Button>
           <Button>Buy it now</Button>
+          <Help />
+
         </div>
       </div>
       
